@@ -42,6 +42,11 @@ a {
 
 @import 'header';
 
+.main-content {
+	min-height: 200vh;
+	background-color: #0B1D26;
+}
+
 /* .header-menu {
 
 	&.active {
