@@ -5,14 +5,14 @@
 		font-weight: $fweight;
 		// font-display: swap // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff2');
-		font-display: optional;
+		font-display: swap;
 	}
 }
 
 
-@include font('OpenSans', normal, normal, '../fonts/OpenSans/OpenSans-Regular.woff2');
-@include font('OpenSans', normal, 600, '../fonts/OpenSans/OpenSans-SemiBold.woff2');
-@include font('OpenSans', normal, bold, '../fonts/OpenSans/OpenSans-Bold.woff2');
-@include font('OpenSans', normal, 800, '../fonts/OpenSans/OpenSans-ExtraBold.woff2');
+@include font('ChronicleDisplay', normal, 900, '../fonts/Chronicle-Display/Chronicle-Display-Black.woff2');
+@include font('ChronicleDisplay', normal, 600, '../fonts/Chronicle-Display/Chronicle-Display-Semibold.woff2');
 
-@include font('BebasNeueBold', normal, 700, '../fonts/BebasNeueBold/BebasNeueBold.woff2');
+@include font('Gilroy', normal, 500, '../fonts/Gilroy/Gilroy-Medium.woff2');
+@include font('Gilroy', normal, 700, '../fonts/Gilroy/Gilroy-Bold.woff2');
+@include font('Gilroy', normal, 800, '../fonts/Gilroy/Gilroy-Extrabold.woff2');
