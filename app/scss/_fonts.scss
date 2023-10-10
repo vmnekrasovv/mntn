@@ -1,0 +1,18 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+		font-display: optional;
+	}
+}
+
+
+@include font('OpenSans', normal, normal, '../fonts/OpenSans/OpenSans-Regular.woff2');
+@include font('OpenSans', normal, 600, '../fonts/OpenSans/OpenSans-SemiBold.woff2');
+@include font('OpenSans', normal, bold, '../fonts/OpenSans/OpenSans-Bold.woff2');
+@include font('OpenSans', normal, 800, '../fonts/OpenSans/OpenSans-ExtraBold.woff2');
+
+@include font('BebasNeueBold', normal, 700, '../fonts/BebasNeueBold/BebasNeueBold.woff2');
