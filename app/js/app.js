@@ -3,7 +3,7 @@
 
 		$('.scroll-down').on('click', function(){
 			$('html, body').animate({
-				scrollTop: $('.navbar').offset().top
+				scrollTop: $('.main-content').offset().top
 			}, 500, function(){ 
 				//console.log('callback function'); 
 			});
@@ -11,12 +11,16 @@
 
 		$(window).on('scroll load', function(e){
 			if(pageYOffset > $('.header').outerHeight(true)){
-				$('.navbar').addClass('fixed');
-				$('body').addClass('navbar-fixed');
+				$('.top-line').addClass('fixed');
+				$('body').addClass('top-line-fixed');
 			} else {
-				$('.navbar').removeClass('fixed');
-				$('body').removeClass('navbar-fixed');
+				$('.top-line').removeClass('fixed');
+				$('body').removeClass('top-line-fixed');
 			}
+		});
+
+		$('.header-menu__link').on('click', function(){
+			$(this).addClass('active').siblings().removeClass('active');
 		});
 
 

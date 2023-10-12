@@ -1,0 +1,19 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #b0c055 #0B1D26;
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #0B1D26;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b0c055;
+  border-radius: 0px;
+  border: 4px solid #b0c055;
+}
