@@ -1,0 +1,143 @@
+.content {
+	position: relative;
+	background-color: $color-dark;
+
+	&-list {
+		position: relative;
+		top: -180px;
+	}
+
+	&-row {
+		display: flex;
+		margin-bottom: 200px;
+
+		.content-left {
+			position: relative;
+			
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 38px;
+				left: 0;
+
+				font-family: 'Gilroy';
+				font-weight: 700;
+				font-size: 240px;
+				line-height: 240px;
+				color: rgba(255,255,255,.1);
+			}
+		}
+	}
+
+	&-left {
+		padding: 145px 114px 140px 150px;
+	}
+
+	&-title-before {
+		position: relative;
+		width: 455px;
+		height: 22px;
+		padding-left: 96px;
+		margin-bottom: 30px;
+
+		font-family: 'Gilroy';
+		font-weight: 800;
+		font-size: 18px;
+		letter-spacing: 5px;
+		color: $color-soft-orange;
+		text-transform: uppercase;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 72px;
+			height: 2px;
+			position: absolute;
+			left: 0;
+			top: 10px;
+			background-color: $color-soft-orange;
+		}
+
+	} // title-before
+
+	&-title {
+		max-width: 555px;
+		margin-bottom: 30px;
+		font-family: 'ChronicleDisplay';
+		font-weight: 600;
+		font-size: 64px;
+		color: #fff;
+	}
+
+	&-text {
+		margin-bottom: 30px;
+		font-family: 'Gilroy';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 32px;
+		color: #fff;
+	}
+
+	&-read-more {
+		position: relative;
+		display: inline-block;
+		height: 20px;
+		padding-right: 40px;
+		font-weight: 700;
+		font-size: 18px;
+		color: $color-soft-orange;
+		font-family: 'Gilroy';
+
+		@keyframes readMore {
+			0% { right: 0px; }
+			100% { right: -10px; }
+		}
+
+		&:after {
+			position: absolute;
+			top: 3px;
+			right: 0px;
+			content: '';
+			display: block;
+			width: 24px;
+			height: 16px;
+			background: url('../images/dest/icons/arrow_right.svg') no-repeat center;
+		}
+
+		&:hover {
+			&:after {
+				animation: .5s readMore ease-in-out alternate infinite;
+			}
+		}
+	}
+
+	.row-1 {
+		.content-left {
+			&:before {
+				content: '01';
+			}
+		}
+	}
+
+	.row-2 {
+		.content-left {
+
+			order: 2;
+			padding: 145px 0 140px 150px;
+			margin-left: 110px;
+			
+			&:before {
+				content: '02';
+			}
+		}
+	}
+
+	.row-3 {
+		.content-left {
+			&:before {
+				content: '03';
+			}
+		}
+	}
+}

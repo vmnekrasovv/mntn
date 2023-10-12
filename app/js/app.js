@@ -3,8 +3,8 @@
 
 		$('.scroll-down').on('click', function(){
 			$('html, body').animate({
-				scrollTop: $('.main-content').offset().top
-			}, 500, function(){ 
+				scrollTop: ($('.content').offset().top - 300)
+			}, 900, function(){ 
 				//console.log('callback function'); 
 			});
 		});
