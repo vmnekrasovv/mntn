@@ -2,7 +2,7 @@
 	$(document).ready(function(){ 
 
 		$(window).on('scroll load', function(e){
-			if(pageYOffset > $('.header').outerHeight(true)){
+			if(pageYOffset > $('.header').outerHeight(true) + 300){
 				$('.top-line').addClass('fixed');
 				$('body').addClass('top-line-fixed');
 			} else {
@@ -46,7 +46,7 @@
 
 				$(this).attr('id') ? target = $('.' + $(this).attr('id')) : true;
 
-				$('html, body').animate({
+				$('html, body').stop().animate({
 					scrollTop: target.offset().top - offset
 				}, speed, function(){ 
 					//console.log('callback function'); 
@@ -55,7 +55,7 @@
 		}
 
 		scrollTopAnimate($('.scroll-down'), $('.content'), 300, 900);
-		scrollTopAnimate($('.pagination__element'), true, 150, 700);
+		scrollTopAnimate($('.pagination__element'), true, 150, 900);
 
 		$('.header-menu__link').on('click', function(){
 			$(this).addClass('active').siblings().removeClass('active');
