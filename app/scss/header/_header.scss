@@ -156,47 +156,24 @@
 		font-family: 'ChronicleDisplay';
 
 		@media screen and (max-width: 1400px) {
-	    	font-size: 78px;
-	    	line-height: 90px;
+	    	font-size: calc(var(--index) * 4);
+	    	line-height: calc(var(--index) * 4.5);
 	    }
 
-	    @media screen and (max-width: 1250px) {
-	    	font-size: 68px;
-	    	line-height: 80px;
-	    }
-
-	    @media screen and (max-width: 1050px) {
-	    	font-size: 58px;
-	    	line-height: 70px;
-	    }
 
 	    @media screen and (max-width: 900px) {
-	    	font-size: 48px;
-	    	line-height: 60px;
 	    	text-align: center;
 	    	text-shadow: 1px 1px #333;
 	    }
 
 	    @media screen and (max-width: 768px) {
 	    	max-width: 480px;
-	    	font-size: 42px;
-	    	line-height: 55px;
 	    	margin: 0 auto;
 	    }
 
 	    @media screen and (max-width: 700px) {
 	    	margin: 0;
 	    	text-align: left;
-	    }
-
-	    @media screen and (max-width: 576px) {
-	    	font-size: 41px;
-	    	line-height: 40px;
-	    }
-
-	    @media screen and (max-width: 375px) {
-	    	font-size: 30px;
-	    	line-height: 35px;
 	    }
 
 	}

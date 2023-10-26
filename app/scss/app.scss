@@ -1,5 +1,4 @@
 @import 'vars';
-@import 'normalize.css';
 
 *, *::before, *::after {
 	padding: 0;
@@ -9,6 +8,11 @@
 	user-select: none;
 	box-sizing: border-box;
 } 
+
+:root {
+	--index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+}
 
 html, body {
 	width: 100%;
