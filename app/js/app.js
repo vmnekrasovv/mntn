@@ -1,3 +1,10 @@
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+ScrollSmoother.create({
+	wrapper: '.wrapper',
+	content: '.box'
+});
+
+
 (function($){
 	$(document).ready(function(){ 
 
@@ -68,4 +75,5 @@
 		});
 		
 	});
+
 })(jQuery);

@@ -12,6 +12,7 @@
 :root {
 	--index: calc(1vw + 1vh);
 	--text: #e7e7e0;
+	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
 
 html, body {
@@ -43,8 +44,24 @@ img {
 	object-position: center;
 }
 
+
+.content {
+	will-change: transform;
+}
+
+.wrapper {
+	z-index: 5;
+}
+
 .parallax-mirror {
 	z-index: 1!important;
+	transition: var(--transition);
+	will-change: transform;
+
+	img {
+		transition: var(--transition);
+		will-change: transform;
+	}
 }
 
 .container {
